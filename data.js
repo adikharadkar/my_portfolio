@@ -87,18 +87,18 @@ export const data = {
     {
       universityName:
         "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
-      degreeName: "Bachelor in Computer Science",
-      start: "Jun 2018",
-      end: "Apr 2021",
-      percentage: "77.57%",
-    },
-    {
-      universityName:
-        "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
       degreeName: "Master in Computer Science",
       start: "Jun 2021",
       end: "Apr 2023",
       percentage: "84.50%",
+    },
+    {
+      universityName:
+        "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad",
+      degreeName: "Bachelor in Computer Science",
+      start: "Jun 2018",
+      end: "Apr 2021",
+      percentage: "77.57%",
     },
   ],
   experience: [
