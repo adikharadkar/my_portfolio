@@ -13,6 +13,19 @@ if (!skillList) {
   });
 }
 
+const downloadLink = document.createElement("a");
+
+downloadLink.textContent = "Download Resume";
+
+downloadLink.classList.add("profile-link");
+downloadLink.style = "text-decoration: underline";
+downloadLink.href =
+  "Aditya Kharadkar_Frontend Developer_3 Years 6 Months_7028281198.pdf";
+downloadLink.setAttribute("download", "aditya_kharadkar.pdf");
+
+const downloadLinkSection = document.getElementById("download-link");
+downloadLinkSection.appendChild(downloadLink);
+
 // Nav Links
 const navLinks = document.getElementById("nav-links");
 
@@ -221,21 +234,31 @@ data.profiles.forEach((profile) => {
 
   const profileLink = document.createElement("a");
   profileLink.classList.add("profile-link");
-  profileLink.textContent = profile.name;
+
+  const img = document.createElement("img");
+  img.src = profile.src;
+  profileLink.appendChild(img);
+
+  img.classList.add("profile-img");
+  // profileLink.textContent = profile.name;
   profileLink.href = profile.link;
   profileLink.setAttribute("target", "_blank");
 
   profileListItem.appendChild(profileLink);
+
+  const linkName = document.createElement("span");
+  profileListItem.appendChild(linkName);
+  linkName.textContent = profile.name;
+  linkName.style = "display: none";
+
+  profileListItem.addEventListener("mouseenter", () => {
+    linkName.style = "display: contents";
+  });
+
+  profileListItem.addEventListener("mouseleave", () => {
+    linkName.style = "display: none";
+  });
   profilesList.appendChild(profileListItem);
 });
-const downloadLink = document.createElement("a");
-const downloadListItem = document.createElement("li");
-downloadListItem.appendChild(downloadLink);
-downloadLink.textContent = "Download Resume";
-downloadListItem.classList.add("profile-list-item");
-downloadLink.classList.add("profile-link");
-downloadLink.href =
-  "Aditya Kharadkar_Frontend Developer_3 Years 6 Months_7028281198.pdf";
-downloadLink.setAttribute("download", "aditya_kharadkar.pdf");
-profilesList.appendChild(downloadListItem);
+
 sideNav.appendChild(profilesList);

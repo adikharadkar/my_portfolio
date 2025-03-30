@@ -190,18 +190,22 @@ export const data = {
     {
       name: "Email",
       link: "mailto:adityakharadkar27gmail.com",
+      src: "./assets/images/email.png",
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/aditya-kharadkar-6352ba174/",
+      src: "./assets/images/linkedin.png",
     },
     {
       name: "Github",
       link: "https://github.com/adikharadkar/",
+      src: "./assets/images/github.png",
     },
     {
       name: "Leetcode",
       link: "https://leetcode.com/u/adikharadkar/",
+      src: "./assets/images/leetcode.png",
     },
   ],
 };
