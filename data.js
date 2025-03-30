@@ -62,25 +62,24 @@ export const data = {
     {
       courseName: "Frontend Engineer",
       courseLink:
-        "https://namastedev.com/adityakharadkar27/certificates/namaste-react",
+        "https://www.codecademy.com/profiles/adityaKharadkar1879958312/certificates/2682884a0719474f96407efe432fdd87",
       vendor: "Codecademy",
     },
     {
       courseName: "Frontend Developer",
-      courseLink:
-        "https://namastedev.com/adityakharadkar27/certificates/namaste-react",
+      courseLink: "https://www.hackerrank.com/certificates/b7f297b0bede",
       vendor: "Hackerrank",
     },
     {
       courseName: "Understanding TypeScript",
       courseLink:
-        "https://namastedev.com/adityakharadkar27/certificates/namaste-react",
+        "https://www.udemy.com/certificate/UC-2f2c7bab-2632-469d-85c5-7a69221c641e/",
       vendor: "Udemy",
     },
     {
       courseName: "React - The Complete Guide",
       courseLink:
-        "https://namastedev.com/adityakharadkar27/certificates/namaste-react",
+        "https://www.udemy.com/certificate/UC-b3506ba7-8279-4b11-b064-6cabbae7add7/",
       vendor: "Udemy",
     },
   ],
